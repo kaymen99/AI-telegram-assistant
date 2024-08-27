@@ -5,9 +5,6 @@ from langsmith import traceable
 from pydantic import BaseModel, Field
 from langchain.tools import BaseTool
 
-os.environ["TELEGRAM_TOKEN"] = "7294023999:AAGTTf7cSnbtpL7EpksOH0nAtprhFoh3HWc"
-os.environ["CHAT_ID"] = "7389702227"
-
 class SendTelegramInput(BaseModel):
     message: str = Field(description="Message to send")
 
