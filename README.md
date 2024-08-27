@@ -5,7 +5,7 @@ Keywords: Telegram bot, Langgraph ReAct, task automation, email management, cale
 Author: kaymen99
 -->
 
-# Telegram AI Assistant Agent
+# Telegram AI Assistant
 
 **Imagine a personal assistant in your pocket 📱 that handles your emails 📧, schedule 📅, and to-do lists ✅—all through Telegram. That's what this Telegram AI agent does! 🤖✨**
 
@@ -63,6 +63,13 @@ Imagine you ask the Telegram Assistant to "Check if I have any meetings today an
 4. **Action**: If available, the agent delegates the email task to the Email Agent to send the message to Emily.
 
 This approach ensures that the agent handles the request accurately, considering each step's outcome before proceeding.
+
+## Tech Stack
+
+- **LangGraph & LangChain**: Frameworks used for building the AI agents and interacting with LLMs (GPT4, LLAMA3, GEMINI)
+- **LangSmith**: For monitoring the different LLM calls and AI agents interactions.
+- **Google APIs**: Provides access to Google services like Calendar, Contacts, and Gmail.
+- **Notion Client**: Interface for interacting with Notion to manage and update to-do lists.
 
 ## How to Run
 
@@ -127,5 +134,3 @@ Feel free to fork the repository, create a branch, and submit a pull request if 
 ## Contact
 
 For any queries or suggestions, please reach out to [aymenMir1001@gmail.com](mailto:aymenMir1001@gmail.com).
-
-# AI-telegram-assistant
