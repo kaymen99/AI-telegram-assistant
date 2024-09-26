@@ -3,7 +3,7 @@
 **Imagine a personal assistant in your pocket 📱 that handles your emails 📧, schedule 📅, and to-do lists ✅—all through Telegram. That's what this Telegram AI agent does! 🤖✨**
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/c38f1e65-05ca-4ed5-97da-283983348a63" alt="AI Telegram agent">
+  <img src="https://github.com/user-attachments/assets/1ccf688b-ad96-495b-9ba8-0dc8dee9773b" alt="Telegram agent">
 </p>
 
 This project provides a personal assistant agent that manages tasks related to your email inbox, calendar, and Notion to-do list. The assistant communicates with you via Telegram, keeping you informed about your schedule, tasks, and emails. The assistant is equipped with sub-agents for handling specific tasks and tools for efficient task management.
@@ -29,6 +29,14 @@ The project includes three specialized sub-agents:
 3. **Notion Agent:** can manage your to-do list in Notion, helping you add, remove, or check tasks as needed
 
 All the sub-agents report back to the Telegram Assistant Manager after completing their respective tasks.
+
+## System Flowchart
+
+This is the detailed flow of the assistant:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c38f1e65-05ca-4ed5-97da-283983348a63" alt="AI Telegram agent">
+</p>
 
 ## Tech Stack
 
