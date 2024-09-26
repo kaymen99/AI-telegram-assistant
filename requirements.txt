@@ -1,5 +1,7 @@
 langgraph 
+langgraph-checkpoint-sqlite
 langchain_community 
+langchain-openai
 langchain-google-genai 
 langchain-groq 
 notion-client

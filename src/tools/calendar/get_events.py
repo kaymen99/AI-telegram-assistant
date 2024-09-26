@@ -18,8 +18,8 @@ class GetCalendarEventsInput(BaseModel):
     end_date: str = Field(description="End date for fetching events")
 
 class GetCalendarEvents(BaseTool):
-    name = "GetCalendarEvents"
-    description = "Use this to retrieve all calendar events between 2 date periods from my calendar"
+    name: str = "GetCalendarEvents"
+    description: str = "Use this to retrieve all calendar events between 2 date periods from my calendar"
     args_schema: Type[BaseModel] = GetCalendarEventsInput
 
     def get_credentials(self):

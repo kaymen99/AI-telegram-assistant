@@ -20,8 +20,8 @@ class ReadEmailsInput(BaseModel):
     email: Optional[str] = Field(description="Email of the contact to read emails from")
 
 class ReadEmails(BaseTool):
-    name = "ReadEmails"
-    description = "Use this to retrieve emails from my inbox"
+    name: str = "ReadEmails"
+    description: str = "Use this to retrieve emails from my inbox"
     args_schema: Type[BaseModel] = ReadEmailsInput
 
     def get_credentials(self):

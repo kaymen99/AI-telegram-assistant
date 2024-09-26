@@ -17,8 +17,8 @@ class GetMyTodoListInput(BaseModel):
     date: str = Field(description="Date for which to retrieve tasks (YYYY-MM-DD)")
 
 class GetMyTodoList(BaseTool):
-    name = "GetMyTodoList"
-    description = "Use this to retrieve tasks from your Notion to-do list for a specific date"
+    name: str = "GetMyTodoList"
+    description: str = "Use this to retrieve tasks from your Notion to-do list for a specific date"
     args_schema: Type[BaseModel] = GetMyTodoListInput
 
     def get_tasks_for_date(self, target_date):

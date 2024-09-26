@@ -19,8 +19,8 @@ class CreateEventInput(BaseModel):
     start_time: str = Field(description="Start time of the event")
 
 class CreateEvent(BaseTool):
-    name = "CreateEvent"
-    description = "Use this to create a new event in my calendar"
+    name: str = "CreateEvent"
+    description: str = "Use this to create a new event in my calendar"
     args_schema: Type[BaseModel] = CreateEventInput
 
     def get_credentials(self):

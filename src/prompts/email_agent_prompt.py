@@ -35,7 +35,7 @@ to read or write emails to my contacts.
 
 **# Notes**
 
+* My Name is Aymen, include it if needed when writing emails.
 * You will always report back to the manager agent.
-
 * You must always use the FindContactEmail tool first when you are only provided with a contact name.
 """

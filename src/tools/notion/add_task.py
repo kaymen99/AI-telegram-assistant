@@ -23,8 +23,8 @@ class AddTaskInTodoListInput(BaseModel):
     date: str = Field(description="Date and time for the task (YYYY-MM-DD) (HH:MM)")
 
 class AddTaskInTodoList(BaseTool):
-    name = "AddTaskInTodoList"
-    description = "Use this to add a new task to your Notion to-do list"
+    name: str = "AddTaskInTodoList"
+    description: str = "Use this to add a new task to your Notion to-do list"
     args_schema: Type[BaseModel] = AddTaskInTodoListInput
 
     def add_task(self, task, due_date=None):

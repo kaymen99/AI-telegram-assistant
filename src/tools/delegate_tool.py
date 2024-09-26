@@ -14,8 +14,8 @@ class DelegateInput(BaseModel):
     task: str = Field(description="Task to delegate to the subagent")
 
 class Delegate(BaseTool):
-    name = "Delegate"
-    description = "Use this to call one of your subagents"
+    name: str = "Delegate"
+    description: str = "Use this to delegate a task to one of your subagents"
     args_schema: Type[BaseModel] = DelegateInput
     
     def delegate(self, agent_name: str, task: str) -> str:

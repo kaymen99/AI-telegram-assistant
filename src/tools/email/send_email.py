@@ -17,8 +17,8 @@ class SendEmailInput(BaseModel):
     body: str = Field(description="Body of the email")
 
 class SendEmail(BaseTool):
-    name = "SendEmail"
-    description = "Use this to send emails to my contacts on my behalf"
+    name: str = "SendEmail"
+    description: str = "Use this to send emails to my contacts on my behalf"
     args_schema: Type[BaseModel] = SendEmailInput
 
     def send_email_with_gmail(self, email_recipient, email_subject, email_body):

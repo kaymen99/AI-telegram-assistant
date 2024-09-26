@@ -17,8 +17,8 @@ class FindContactEmailInput(BaseModel):
     name: str = Field(description="Name of the contact")
 
 class FindContactEmail(BaseTool):
-    name = "FindContactEmail"
-    description = "Use this to get the email of one of my contact when you only have his name"
+    name: str = "FindContactEmail"
+    description: str = "Use this to get the email of one of my contact when you only have his name"
     args_schema: Type[BaseModel] = FindContactEmailInput
 
     def get_credentials(self):
